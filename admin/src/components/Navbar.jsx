@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useContext } from 'react';
-import { assets } from '../assets/assets'
+// import { assets } from '../assets/assets'
 import { AdminContext } from '../context/AdminContext';
 import { useNavigate } from 'react-router-dom'
 import { DoctorContext } from '../context/DoctorContext';
@@ -22,7 +22,11 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center px-4 sm:px-10 py-3 border-b bg-white'>
       <div className='flex items-center gap-2 text-xs'>
-        <img className='w-36 sm:w-40 cursor-pointer' src={assets.admin_logo} />
+        <h2
+          className="w-44 cursor-pointer text-3xl font-bold text-blue-600 hover:text-blue-800 transition duration-300"
+        >
+          Hospital <span className="text-gray-600">X</span>
+        </h2>
         <p className='border px-2.5 py-0.5 rounded-full border-gray-500 text-gray-600'>{aToken ? 'Admin' : 'Doctor'}</p>
       </div>
       <button onClick={logout} className='bg-[#5F6FFF] text-white text-sm px-10 py-2 rounded-full'>Logout</button>

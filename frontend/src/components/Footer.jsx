@@ -1,5 +1,5 @@
-import React from 'react'
-import { assets } from '../assets/assets'
+// import React from 'react'
+// import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
@@ -8,8 +8,14 @@ const Footer = () => {
 
         {/* -------Left Section ------ */}
         <div>
-          <img className='mb-5 w-40' src={assets.logo} alt="" />
-          <p className='w-full md:w-2/3 text-gray-600 leading-6'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro saepe harum dolorum.</p>
+          {/* <img className='mb-5 w-40' src={assets.logo} alt="" /> */}
+          <h2
+            className="w-44 cursor-pointer text-3xl font-bold text-blue-600 hover:text-blue-800 transition duration-300"
+          >
+            Hospital <span className="text-gray-600">X</span>
+          </h2>
+
+          <p className='w-full md:w-2/3 text-gray-600 leading-6'>Hospital X is a modern healthcare platform designed to streamline patient management, doctor scheduling, and medical records. It offers a user-friendly interface for patients, doctors, and admins, ensuring efficient appointment booking, secure data handling, and smooth hospital operations.</p>
         </div>
 
         {/* -------Center Section ------ */}
@@ -36,7 +42,7 @@ const Footer = () => {
       {/* -------copyright text-------- */}
       <div>
         <hr />
-        <p className='py-5 text-sm text-center'>Copyright 2025 @Prescripto - All Right Reserved.</p>
+        <p className='py-5 text-sm text-center'>Copyright 2025 @Hospital X - All Right Reserved.</p>
       </div>
     </div>
   )
