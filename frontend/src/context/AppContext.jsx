@@ -4,11 +4,11 @@ import { doctors } from "../assets/assets";
 export const AppContext = createContext(); // Create context
 
 const AppContextProvider = (props) => {
-
+  const url = 'https://hospital-x-backend.onrender.com'
   const currencySymbol = '$'
   const value = {
     doctors,
-    currencySymbol
+    currencySymbol, url
   };
 
   return (
