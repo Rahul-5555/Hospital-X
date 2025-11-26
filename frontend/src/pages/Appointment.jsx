@@ -122,8 +122,10 @@ const Appointment = () => {
   }, [doctors, docId]);
 
   useEffect(() => {
-    getAvailableSlots();
-  }, [docInfo])
+    if (docInfo) {  // Only run if docInfo exists
+      getAvailableSlots();
+    }
+  }, [docInfo]);
 
   useEffect(() => {
     console.log(docSlots);

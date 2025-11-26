@@ -257,7 +257,7 @@ const cancelAppointment = async (req, res) => {
     const appointmentData = await appointmentModel.findById(appointmentId)
 
     // verify appointment user
-    if (appointmentData.userId !== userId) {
+    if (appointmentData.userId.toString() !== userId) {
       return res.json({
         success: false,
         message: "Unauthorized action"
