@@ -1,4 +1,3 @@
-import React from 'react'
 import { assets } from '../assets/assets'
 
 const About = () => {
@@ -13,10 +12,9 @@ const About = () => {
         <img className='w-full md:max-w-[360px]' src={assets.about_image} alt="" />
         <div className='flex flex-col justify-center gap-6 md:w-2/4
          text-sm text-gray-600'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ut voluptatem eveniet? Voluptatibus, odio labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, placeat fugit iusto qui dolores inventore.</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste necessitatibus repudiandae nesciunt esse?</p>
+          <p>At Hospital X, our mission is to make healthcare simple, accessible, and trustworthy for everyone. We bring patients and qualified doctors together on one seamless platform where you can easily find specialists, book appointments, and receive quality medical care without stress or confusion. </p> <p> We believe that good health starts with the right information and the right guidance. That’s why Hospital X is built with modern technology, secure systems, and a user-friendly interface—so every patient can connect with the best doctors in just a few clicks. Whether it’s general consultation, expert advice, or long-term care, Hospital X is designed to support your health journey at every step..</p>
           <b className='text-gray-800'>Our vision</b>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat enim, accusantium delectus quia dolorum!</p>
+          <p>Our vision is to create a future where high-quality healthcare is available to every individual, regardless of location or background. We aim to build a reliable platform where patients feel safe, doctors feel supported, and healthcare becomes more transparent, efficient, and connected. </p> <p> With continuous innovation, a dedication to patient well-being, and a strong commitment to integrity, Hospital X is working to redefine what modern healthcare looks like.</p>
         </div>
       </div>
 
